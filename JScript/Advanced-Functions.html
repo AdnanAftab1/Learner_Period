@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Advanced Functions</title>
+</head>
+<body>
+    <script>
+        function Loader()
+        { 
+            const ele= document.querySelector("button");
+            if(ele.innerHTML==="Start"){
+            ele.className=".btn btn-dark";
+            ele.innerHTML="Loading.......";
+            setTimeout(function () {
+                ele.className="btn btn-success";
+                ele.innerHTML="Finished";
+            },5000);
+        }
+        if(ele.innerHTML==="Finished"){
+            ele.className=".btn btn-yellow";
+            ele.innerHTML="Loading.......";
+            setTimeout(function () {
+                ele.className="btn btn-primary";
+                ele.innerHTML="Start";
+            },5000);
+        }
+        }
+        function show(a){     
+            if(a===0){
+            document.title=`Advanced Functions`;
+            return;
+            }
+            document.title=`(${a}) New Messages`;
+            localStorage.setItem('a',JSON.stringify(a));           
+        }
+        let a=0;
+        a=JSON.parse(localStorage.getItem('a'));
+        console.log(a);
+        show(a);
+        
+    </script> 
+    <br>
+    <button class="btn btn-primary" style="margin: 20px;" onclick="Loader()">Start</button>
+    <button class="btn btn-outline-success" style="margin: 20px;" onclick="show(++a)">Add</button>
+    <button class="btn btn-outline-danger" style="margin: 20px;" onclick="if(a>0)show(--a);">Remove</button>
+</body>
+</html>

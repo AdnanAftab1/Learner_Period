@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Test</title>
+</head>
+<body>
+    <script>
+        let array=[24,45,84,64,54,96,36,78,51];
+        for (let index = 0; index < array.length; index++) {
+            const element = array[index];
+            console.log(index,element);
+        }
+        array.splice(3,1);
+        console.log();
+        console.log();
+        console.log();
+        for (let index = 0; index < array.length; index++) {
+            const element = array[index];
+            console.log(index,element);
+        }
+    </script>
+</body>
+</html>

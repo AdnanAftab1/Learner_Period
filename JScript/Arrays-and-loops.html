@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <script src="Arrays-and-loop.js"></script>
+    <link rel="scripts" href="C:\Users\shari_zl2ctro\Music\Music\Web_Development\JScript\Arrays-and-loop.js">
+</head>
+<body>
+    <h5>Todo List practice 2</h5>
+    <input class="Mojo"  placeholder="Todo Name" onkeyup="if(event.key==='Enter'){adder3(value);value='';}">
+    <input type="date" class="Tojo">
+    <button class="btn btn-success" style="padding: 0.5%;" onclick="const Ele=document.querySelector('.Mojo');const Ele2=document.querySelector('.Tojo'); adder3(Ele.value,Ele2.value);Ele.value='';Ele2.value=''">Add</button>
+    <br>
+    <br>
+    <div class="Jojo" style="display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap:10px;
+    column-gap:10px;"></div>
+</body>
+</html>

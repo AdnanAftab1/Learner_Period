@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rock Paper Scissor</title>
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="RockPaperScissor.css" />
+</head>
+<body style="background-color: rgb(15, 15, 15);margin: 5px;">
+  <h1>Rock Paper Scissor</h1>
+  <button class="butn" title="Rock" onclick="resulter('Rock')">&#9994</button>
+  <button class="butn" title="Paper" onclick="resulter('Paper')">&#128400</button>
+  <button class="butn" title="Scissor" onclick="resulter('Scissor')">&#9996</button>
+  <br>
+  <div class="show"></div>
+  <br>
+  <p class="Resulted"></p>
+  <br>
+  <p class="Player">Begin</p>
+  <br>
+  <button class="btn btn-danger" title="Reset"  onclick="score.win=0;score.loss=0;score.tie=0;localStorage.removeItem('score');document.querySelector('.Player').innerText=`Win:${score.win} \t Loss:${score.loss} \t Tie:${score.tie}`;">Reset</button>
+  <button class="btn btn-primary" title="AutoPlay" onclick="autoplayer()">AutoPlay</button>
+  <script src="Rock_Paper_Scissor.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calulator</title>
+    <link rel="icon" href=
+    "https://i.pinimg.com/originals/69/57/12/6957120098dca1bc15aee04e899a95ca.jpg"
+              type="image/x-icon">
+              <link rel="stylesheet" href="Calculator.css" type="text/css" >
+              
+</head>
+<body>
+    <script>
+       let cal='';
+       function evalu() {
+            console.log('Screw');
+            cal=eval(cal) ;
+            document.getElementById('result').value=cal;
+       };
+       </script>
+    <h1 style="text-align: center;font-family:'Farro';">Calculator(Only CSS)</h1>
+<div style="display: flex;justify-content: center;">
+    <div class="BODY">
+<input type="text" id="result" class="screen" onkeypress="if (event.key==='Enter') {
+    cal=value;evalu();
+}" value='0' >
+    <div class="buttons_grid">
+     <input type="button" class="Tip" onclick="cal+='1'; document.getElementById('result').value=cal" value="1">   
+     <input type="button" class="Tip" onclick="cal+='2'; document.getElementById('result').value=cal" value="2">   
+     <input type="button" class="Tip" onclick="cal+='3'; document.getElementById('result').value=cal" value="3">   
+     <input type="button" class="Tip1" onclick="cal+='+'; document.getElementById('result').value=cal" value="+">   
+     <input type="button" class="Tip" onclick="cal+='4'; document.getElementById('result').value=cal" value="4">   
+     <input type="button" class="Tip" onclick="cal+='5'; document.getElementById('result').value=cal" value="5">   
+     <input type="button" class="Tip" onclick="cal+='6'; document.getElementById('result').value=cal" value="6">   
+     <input type="button" class="Tip1" onclick="cal+='-'; document.getElementById('result').value=cal" value="-">   
+     <input type="button" class="Tip" onclick="cal+='7'; document.getElementById('result').value=cal" value="7">   
+     <input type="button" class="Tip" onclick="cal+='8'; document.getElementById('result').value=cal" value="8">   
+     <input type="button" class="Tip" onclick="cal+='9'; document.getElementById('result').value=cal" value="9">   
+     <input type="button" class="Tip1" onclick="cal+='*'; document.getElementById('result').value=cal" value="*">   
+     <input type="button" class="Tip" onclick="cal+='0'; document.getElementById('result').value=cal" value="0">   
+     <input type="button" class="Tip" onclick="cal+='.'; document.getElementById('result').value=cal" value=".">   
+     <input type="button" class="Tip" onclick="evalu();" value="=">   
+     <input type="button" class="Tip1" onclick="cal+='/'; document.getElementById('result').value=cal" value="/">
+    </div>
+    </div>
+</div>
+</body>
+</html>

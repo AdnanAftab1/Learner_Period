@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rock Paper Scissor</title>
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <style>@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");</style>
+</head>
+<body>
+    <script>
+        function costly()
+        {
+            const Ele=document.querySelector('input');
+            let c=Number(Ele.value);
+            console.log(c);
+            if(c<40)
+            c=c+10;
+            document.querySelector('.Finded').innerHTML=`Final Cost:${c}`;
+            
+        }
+    </script>
+    <H1 style="color: crimson;">Amazon Shipping Calculator</H1>
+    <p>Order under $40:$10 for Shipping.</p>
+    <p>Order above $40:Free Shipping.</p>   
+    <input placeholder="Cost of Order" onkeyup="{costly()}" >
+    <input placeholder="Name" class="Namer" onkeyup="document.querySelector('.Finded2').innerHTML=value" >  
+    <button class="btn btn-primary" onclick="costly()">Calculate</button>
+    <button class="btn btn-danger" onclick="window.close()">Close</button>
+    <br>
+    <br>
+    <h3 class="Finded">Final Cost:</h3>
+    <h3 class="Finded2"></h3>
+</body>
+</html>

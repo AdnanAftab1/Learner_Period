@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <title>DOM Practice</title>
+</head>
+<body>
+    <p>YouTube Subscribe Button</p>
+    <button type="button" class="btn btn-danger" onclick="subscribe()">Subscribe</button>
+    <script>
+        function subscribe()
+        {
+            const ele=document.querySelector('button');
+            if (ele.innerHTML==='Subscribe') {
+                ele.innerHTML='Subscribed';
+                ele.className='btn btn-primary';
+            }
+            else{
+                ele.innerHTML='Subscribe';
+                ele.className='btn btn-danger';
+            }
+        }
+    </script>
+    
+</body>
+</html>
